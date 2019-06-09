@@ -1,0 +1,100 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+        color: rgb(0, 0, 0);
+        margin-left: 30px;
+    }
+}
+
+.create-column {
+    float: left;
+    margin-left: 30px;
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff;
+    background-color: rgb(31, 147, 182);
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgb(31, 147, 182);
+}
+
+.column-container {
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.column-card-list {
+    min-height: 250px;
+    padding: 0 8px;
+}
+
+li {
+    list-style-type: none;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.column-title {
+    color: black;
+    height: 20px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: -15px;
+}
+
+.card-description {
+    padding: 5px;
+}
+
+.card > p {
+    min-height: 20px;
+    text-align: left;
+}
+
+.column {
+    background-color: #9eafc0;
+    border-radius: 3px;
+    min-width: 20%;
+    width: 300px;
+    margin: 30px;
+    text-align: right;
+}
+
+.btn-delete {
+    cursor: pointer;
+    font-size: 15px;
+    background: none;
+    border: none;
+}
+
+.add-card {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff;
+    background-color: rgb(31, 147, 182);
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgb(31, 147, 182);
+    margin: 8px;
+}
