@@ -1,4 +1,5 @@
 // Communication with the server
+var prefix = "https://cors-anywhere.herokuapp.com/";
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
     'X-Client-Id': '4103',
@@ -17,7 +18,7 @@ function generateTemplate(name, data, basicElement) {
 }
 
 // Polling array from server
-fetch(baseUrl + '/board', {
+fetch(prefix + baseUrl + '/board', {
         headers: myHeaders
     })
     .then(function (resp) {
